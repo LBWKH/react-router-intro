@@ -22,7 +22,9 @@ function App() {
             return <About name="Pedro" />;
           }}
         />
-        {/* Rota para demonstrar parametros de rota no React Router */}
+        {/* Rota para demonstrar parametros de rota no React Router
+        O React Router vai considerar qualquer coisa que estiver no lugar de :name como dinamico, e disponibilizar isso em uma variavel com o mesmo nome
+        */}
         <Route path="/greetings/:name" component={Greetings} />
       </BrowserRouter>
     </div>
