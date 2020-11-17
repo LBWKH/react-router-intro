@@ -1,13 +1,15 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
-function Homepage() {
+function HomePage(props) {
   return (
     <div>
-      <h1>Hello! You're in the homepage</h1>
-      <Link to="/about">Go to About page</Link>
+      {props.language === "pt-br" ? (
+        <h1>Olá! Bem-vindo à página principal!</h1>
+      ) : (
+        <h1>Welcome to the Homepage!</h1>
+      )}
     </div>
   );
 }
 
-export default Homepage;
+export default HomePage;
