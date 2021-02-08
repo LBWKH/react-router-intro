@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Buzz",
+    "age": 9,
+    "breed": "Golden Retriever",
+    "sex": "Male",
+    "img": "https://images.unsplash.com/photo-1611498491685-abb3e359cf69?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1651&q=80"
+  },
+  {
+    "name": "Belinha",
+    "age": 4,
+    "breed": "Poodle",
+    "sex": "Female",
+    "img": "https://images.unsplash.com/photo-1453413827166-b8eed9851c66?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80"
+  },
+  {
+    "name": "Fifi",
+    "age": 3,
+    "breed": "Vira-lata Caramelo",
+    "sex": "Female",
+    "img": "https://images.unsplash.com/photo-1576684551765-b1c9b13b0733?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80"
+  },
+  {
+    "name": "Billy",
+    "age": 8,
+    "breed": "Vira-lata/Shiba-Inu",
+    "sex": "Male",
+    "img": "https://pbs.twimg.com/media/ErOaxbcW8AAJtw3?format=jpg&name=medium"
+  }
+]

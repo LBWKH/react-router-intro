@@ -1,32 +1,24 @@
 import React from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route } from "react-router-dom";
 import "bulma/css/bulma.css";
 
-import Homepage from "./HomePage";
-import About from "./About";
-import Contact from "./Contact";
+import DogsList from "./DogsList";
+import HowToAdopt from "./HowToAdopt";
 import Navbar from "./Navbar";
-import CampusList from "./campus/CampusList";
-import CampusDetail from "./campus/CampusDetail";
+import DogDetail from "./DogDetail";
 
 function App() {
   return (
     <div>
       <BrowserRouter>
         <Navbar />
-        <Switch>
-          <Route exact path="/">
-            <Homepage language="pt-br" />
+        <div className="container">
+          <Route exact path="/" component={DogsList} />
+          <Route path="/como-adotar">
+            <HowToAdopt language="en-us" />
           </Route>
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/contact">
-            <Contact />
-          </Route>
-          <Route exact path="/campus" component={CampusList} />
-          <Route path="/campus/:city" component={CampusDetail} />
-        </Switch>
+          <Route path="/cachorro/:dogName" component={DogDetail} />
+        </div>
       </BrowserRouter>
     </div>
   );

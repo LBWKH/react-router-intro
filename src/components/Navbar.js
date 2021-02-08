@@ -3,24 +3,20 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
-    <nav
-      className="navbar is-link"
-      role="navigation"
-      aria-label="main navigation"
-    >
+    <nav className="navbar" role="navigation" aria-label="main navigation">
       <div className="navbar-brand">
-        <Link className="navbar-item" to="/">
+        <a className="navbar-item" href="/google.com">
           <img
             src="https://bulma.io/images/bulma-logo.png"
             width="112"
             height="28"
-            alt="Bulma Logo"
+            alt="logo"
           />
-        </Link>
+        </a>
 
         <a
           role="button"
-          className="navbar-burger burger"
+          className="navbar-burger"
           aria-label="menu"
           aria-expanded="false"
           data-target="navbarBasicExample"
@@ -34,34 +30,13 @@ function Navbar() {
 
       <div id="navbarBasicExample" className="navbar-menu">
         <div className="navbar-start">
-          <Link className="navbar-item" to="/">
+          <Link to="/" className="navbar-item">
             Home
           </Link>
 
-          <Link className="navbar-item" to="/about">
-            About
+          <Link to="/como-adotar" className="navbar-item">
+            Como adotar
           </Link>
-
-          <Link className="navbar-item" to="/contact">
-            Contact
-          </Link>
-
-          <Link className="navbar-item" to="/campus">
-            Campus List
-          </Link>
-        </div>
-
-        <div className="navbar-end">
-          <div className="navbar-item">
-            <div className="buttons">
-              <Link className="button is-primary" to="/signup">
-                <strong>Sign up</strong>
-              </Link>
-              <Link className="button is-light" to="/login">
-                Log in
-              </Link>
-            </div>
-          </div>
         </div>
       </div>
     </nav>
